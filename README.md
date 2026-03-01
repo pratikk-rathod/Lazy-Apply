@@ -5,6 +5,25 @@ A lightweight, native Google Chrome extension designed to automate the process o
 ## Purpose
 Applying to dozens of jobs on Naukri can be tedious, particularly because many jobs require you to answer identical questions (e.g., current CTC, notice period) repeatedly. This extension automates this workflow: you click once, and it attempts to apply to all jobs on the screen using your predefined default answers.
 
+## Installation & Setup
+
+1. **Download the code or Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/Lazy-Apply.git
+   ```
+2. Open Google Chrome and navigate to the Extensions page at `chrome://extensions/`.
+3. Toggle on **Developer mode** in the top-right corner.
+4. Click the **Load unpacked** button in the top-left corner.
+5. Select the `Lazy-Apply` directory that contains the `manifest.json` file.
+6. **Important:** The extension is now installed. Pin the "Lazy Apply 🍌" icon to your toolbar!
+
+## How to use
+1. Go to any job search page or recommended jobs page on **Naukri.com** (e.g., `naukri.com/mnjuser/recommendedjobs`).
+2. Click the Lazy Apply extension icon in your toolbar.
+3. Fill in your default answers like Expected CTC, Notice Period, etc.
+4. Click **Apply While I Nap 🍌**.
+5. Wait and look at the extension logs! The extension will scan all jobs on the page, authenticate seamlessly, and apply to them automatically filling dynamically required forms.
+
 ## Architecture & Codebase Structure
 
 The extension follows Manifest V3 architecture.
