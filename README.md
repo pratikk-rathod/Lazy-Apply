@@ -9,7 +9,7 @@ Applying to dozens of jobs on Naukri can be tedious, particularly because many j
 
 1. **Download the code or Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/Lazy-Apply.git
+   git clone https://github.com/pratikk-rathod/Lazy-Apply.git
    ```
 2. Open Google Chrome and navigate to the Extensions page at `chrome://extensions/`.
 3. Toggle on **Developer mode** in the top-right corner.
@@ -61,3 +61,22 @@ It then shapes the `applyData` payload structure and sends it to the same API to
 3.  **Application Logs & Retry DB**: Store successfully applied `jobIds` in local storage/IndexedDB. If a job application fails due to missing skills or a complex un-answered question, the user could answer it once manually, save it to the DB, and the extension would re-attempt it.
 4.  **Rate Limiting**: Naukri restricts applications (typically ~50 a day). Building a visual counter inside the popup that parses the `quotaDetails` from the API response to warn the user when they are nearing the limit.
 5.  **Robust Error Mapping**: Naukri frequently returns HTTP 406 for validation errors on custom drop-downs. Better extraction of `customErrorCode: 290` (List is required) to gracefully inform the user to configure list behaviors.
+
+## Contributing
+
+We welcome open-source contributions! To get started:
+
+1. **Fork the repository** on GitHub.
+2. **Clone your fork** locally:
+   ```bash
+   git clone https://github.com/<your-username>/Lazy-Apply.git
+   ```
+3. **Create a new branch** for your feature or bugfix (branch off of `develop`):
+   ```bash
+   git checkout -b feature/your-awesome-feature
+   ```
+4. **Make your changes** and test them as an unpacked extension.
+5. **Commit and push** your changes to your fork.
+6. **Submit a Pull Request** against our `develop` branch! 🍌
+
+For more details on guidelines, please see the [CONTRIBUTING.md](CONTRIBUTING.md) file.
