@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Lazy Apply (Naukri Automator)",
+  "version": "1.0",
+  "description": "Why apply manually when you can be a lazy banana? Automates Naukri jobs natively.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "cookies",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.naukri.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.naukri.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Lazy Apply",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

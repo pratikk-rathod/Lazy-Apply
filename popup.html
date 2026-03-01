@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Naukri Auto Apply</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="icon.png" alt="Banana Logo" class="logo" id="logoImg" onerror="this.style.display='none'">
+            <h2>Lazy Apply</h2>
+        </div>
+        <p class="subtitle">Because filling out "Current CTC" 50 times a day is for peasants.</p>
+
+        <div class="form-group">
+            <label>Expected CTC (Lakhs): <span class="hint">Be greedy</span></label>
+            <input type="text" id="expectedCtc" value="1500000" placeholder="E.g., 1500000" />
+        </div>
+        <div class="form-group">
+            <label>Current CTC (Lakhs): <span class="hint">Lie a little</span></label>
+            <input type="text" id="currentCtc" value="1000000" placeholder="E.g., 1000000" />
+        </div>
+        <div class="form-group">
+            <label>Notice Period / Months: <span class="hint">0 is best</span></label>
+            <input type="text" id="noticePeriod" value="1" placeholder="E.g., 1 or 1 Month" />
+        </div>
+        <div class="form-group">
+            <label>Years of Exp (Generic):</label>
+            <input type="text" id="experience" value="1" placeholder="E.g., 1" />
+        </div>
+        <div class="form-group">
+            <label>Catch-All Answer: <span class="hint">"Yes" fixes everything</span></label>
+            <input type="text" id="catchAll" value="Yes" placeholder="E.g., Yes" />
+        </div>
+
+        <button id="applyBtn">Apply While I Nap</button>
+
+        <div id="status" class="status-box"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
